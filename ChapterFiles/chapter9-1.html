@@ -1,0 +1,134 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<title>Oakwood Elementary School</title>
+<script type="text/javascript">
+<!--Hide from old browsers
+function countDown() {
+	var today = new Date()
+	var dayofweek = today.toLocaleString()
+	dayLocate = dayofweek.indexOf(" ")
+	weekday = dayofweek.substring(0, dayLocate)
+	newDay = dayofweek.substring(dayLocate)
+	dayLocate = newDay.indexOf(",")
+	monthDate = newDay.substring(0, dateLocate+1)
+	yearLocate = dayofweek.indexOf("2013")
+	year = dayofweek.substr(yearLocate, 4)
+
+	var ColumbusDay = new Date("October 8, 2013")
+		var daysToGo = ColumbusDay.getTime()-today.getTime()
+	var daysToColumbusDay = Math.ceil(daysToGo/(1000*60*60*24))
+
+	displayDate.innerHTML = "<h3>Today is "+weekDay+" "+monthDate+" "+year+". We have "+daysToColumbusDay+" days until Columbus Day.</h3>
+	}
+
+function scrollColor() {
+		styleObject=document.getElementsByTagName('html')[0].style
+		styleObject.scrollbarFaceColor="#fbb040"
+		styleObject.scrollbarTrackColor="#ffe700"
+	}
+
+function loadInfo(myForm) {
+		var menuSelect=myForm.Menu.selectedIndex
+		var menuUrl=myForm.Menu.options[menuSelect].value+".html"
+		window.location=menuUrl
+}
+
+function copyRight() {
+	var lastModDate = document.lastmodified
+	var lastModDate = lastModDate.substring(0,10)
+	displayCopyRight.innerHTML = "<h6>The URL of this document is "+document.URL+"<br />Copyright Oakwood Elementary School"+"<br /> This document was last modified "+lastModDate+".</h6>"
+}
+
+//-->
+</script>
+<style type="text/css">
+.center {
+	text-align:center;
+    }
+
+table {
+	margin-left:15%;
+	margin-right:15%;
+    }
+.cell-width {
+	width: 50%;
+}
+
+.left-align {
+   width: 50%;
+   left: 0;
+   }
+
+.right-align {
+   width: 50%;
+   right: 0;
+   text-align: right;
+   }
+
+</style>
+</head>
+<body onload="scrollColor(); countDown(); copyRight()">
+<div class="center">
+<p><img src="chapter9Oakwood.jpg" alt="oakwood banner" width="750" height="120" /></p>
+<p style="font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold;">OAKWOOD ELEMENTARY SCHOOL</p>
+<img src="hrzntlrule.jpg" width="700" height="5" alt="hr" />
+<div id="displayDate">
+</div>
+<img src="hrzntlrule.jpg" width="700" height="5" alt="hr" /> </div>
+<table>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:14pt">Oakwood Village School Board</p>
+    <p style="font-family: 'Times New Roman', Times, serif; font-size:12pt">The Oakwood Village School Board will have monthly meetings on the third Tuesday of the month this fall. Meeting days are September 18, October 16, November 19, and December 18, 2012. All meetings will start promptly at 7:30 p.m. and adjourn by 9 p.m. Meeting days for the spring semester will be determined at the December meeting.</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:14pt">Morning drop off and afternoon pick up</p>
+<p style="font-family: 'Times New Roman', Times, serif; font-size:12pt">Please remember to enter the school drop off area from the south entrance and exit out the north drive way. As always, please watch for children walking to school.</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:14pt">Fall Fund Raiser</p>
+<p style="font-family: 'Times New Roman', Times, serif; font-size:12pt">This fall, Oakwood Elementary School will have a flea market. We are seeking donations of usable items that can be sold at the flea market. Volunteers are needed to help with setup, sales, and post flea market clean up. Mike's Stop and Shop will serve hot dogs, hamburgers and refreshments.</p>
+     </td>
+  </tr>
+  <tr>
+    <td class="right-align"><img src="school-house_left.gif" alt="school" width="160" height="139" /></td>
+    <td class="left-align">
+          <img src="school-house_right.gif" alt="school" width="160" height="139" />
+    </td>
+  </tr>
+    <tr>
+    <td colspan="2">
+    <form id="announceMenu" action=" ">
+      <p style="font-weight:bolder">
+       Select an item from the list to see other current announcements:
+         <select name="Menu" onchange="loadInfo(this.form)">
+           <option>Select an information item</option>
+           <option value="chapter09fundraiser">October Fundraiser</option>
+           <option value="chapter09pto">October PTO </option>
+           <option value="chapter09tests">State Achievement Test</option>
+         </select>
+      </p>
+    </form></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:14pt">Attendance Policy:
+    <span style="font-family: 'Times New Roman', Times, serif; font-size:8pt">Please call in your child's attendance at 555-555-5555 x2205.</span>
+    </p>
+    </td>
+  </tr>
+</table>
+<p></p>
+<div id="displayCopyRight">
+</div>
+</body>
+</html>

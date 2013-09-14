@@ -1,0 +1,108 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+<title>Make9-1</title>
+<script type="text/javascript">
+<!--Hide from old browsers
+function newScroll() {
+   styleObject=document.getElementsByTagName('html')[0].style
+   styleobject.scrollbarFaceColor="#653415"
+   styleObject.scrollbarTrackColor="#c69c6d"
+}
+
+function todayDate() {
+   var today = new Date()
+   var dayofweek = today.toLocaleString()  
+   weekDay = dayofweek.substring(0, dayLocate)
+   newDay = dayofweek.substring(dayLocate) 
+   dateLocate = newDay.indexOf(",")
+   monthDate = newDay.substring(0, dateLocate+1)
+   yearLocate = dayofweek.indexOf("2009")
+   year = dayofweek.substr(yearLocate, 4)
+
+   var social = new Date("November 12, 2009")
+   var daysToGo = social.getTime()-today.getTime()
+   var daysToSocial = Math.ceil(daysToGo/(1000*60*60*24))
+
+   displayDate.innerHTML = "<h3>Today is "+weekDay+" "+monthDate+" "+year+". Only "+daystoSocial+" days until the ice cream social.</h3>"
+}
+
+function CopyRight() {
+   var lastModDate = document.lastModified
+   var lastModDate = lastModDate.substring(0,10)
+   datemodified.innerHTML = "<h6>The URL of this document is "+document.URL+"Copyright PHI BETA ALPHA. This document was last modified "+lastModDate+".</h6>"
+}
+
+//-->
+</script>
+<style type="text/css">
+hr {
+	color:#006633;
+	width:600px;
+	height: 5px;
+	}
+	
+.center {
+	text-align:center;
+    }
+
+table {
+	margin-left:15%;
+	margin-right:15%;
+    }
+.cell-width {
+	width: 50%;
+}
+	
+.left-align {
+   width: 50%;
+   left: 0;
+   }
+
+.right-align {
+   width: 50%;
+   right: 0;
+   text-align: right; 
+   } 
+	
+</style>
+</head>
+<body onload="newScroll(); todayDate(); copyRight();">
+<div class="center">
+<p><img src="make9-1banner.gif" alt="Phi Beta Alpha banner" width="750" height="120" /></p>
+<p style="font-family:Arial, Helvetica, sans-serif; font-size:14pt; font-weight:bold;">Phi Beta Alpha Ice Cream Social</p>
+<img src="hrimg-brown.gif" width="750" height="5" alt="divider" />
+  <div id="displayDate">
+  </div>
+<img src="hrimg-brown.gif" width="750" height="5" alt="divider" />
+</div>
+<table width="62%">
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family: Arial, Helvetica, sans-serif; font-size:12pt">Phi Beta Alpha Sorority</p>
+    <p>Sorority life was not just for college. Keep the friendship, leadership, service, and social events going after college. Join the Phi Beta Alpha Sorority. Remember how sorority life was a home away from home? It was because of your friendships with your sorority sisters and your support network. Phi Beta Alpha can help you with new friends and extend your social and professional network.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family: Arial, Helvetica, sans-serif; font-size:12pt">Membership Drive</p>
+    <p>Our current member ship drive kicks off with our annual summer Ice Cream Social. Join us at the Marquette Park Pavilion on the first night of summer and meet our members. 
+    </p></td>
+  </tr>
+  <tr>
+    <td>
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:14px; float:right"><img src="make9-1food-dessert1.jpg" width="234" height="302" alt="dessert" /></p>    
+    </td>
+    <td><span style="font-weight:bold; font-family:Arial, sans-serif; font-size:14px"><img src="make9-1food-dessert2.jpg" width="234" height="302" alt="dessert " /></span></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+</table>
+<div id="datemodified">
+</div>
+</body>
+</html>

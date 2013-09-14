@@ -1,0 +1,123 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+<title>Apply9-1 Solution</title>
+<script type="text/javascript">
+<!--Hide from old browsers
+function countDown() {
+	var today = new Date()
+	var dayofweek = today.toLocaleString()
+	dayLocate = dayofweek.indexOf(" ")
+	weekDay = dayofweek.substring(0, dayLocate)
+	newDay = dayofweek.substring(dayLocate+1)
+	monthLocate = newDay.indexOf(" ")
+	month = newDay.substring(0, monthLocate)
+	newday2 = newDay.substring(monthLocate+1)
+	dayLocate = newDay2.indexOf(" ")
+	day = newDay2.substring(0, dayLocate)
+	yearLocate = dayofweek.indexOf("2012")
+	year = dayofweek.substr(yearLocate, 4)
+	
+	var July4th = new Date("July 4, 2012")
+	var daysToGo = July4th.getTime()-today.getTime()
+	var daysToJuly4th = Math.ceil(daysToGo/(1000*60*60*24))
+	
+displayDate.innerHTML = "<h3>Today is "+today+" "+weekDay+" "+month+" "+day+" "+year+". Only "+daysToRun+" days until the July 4th weekend steam run.</h3>
+}
+
+function scrollColor() {
+	styleObject=document.getElementsByTagName('html')[0].style
+	styleObject.scrollbarFaceColor="#007040"
+	styleObject.scrollbarTrackColor="#000000"
+}
+
+fucntion copyRight() {
+	var lastModDate = document.lastModified
+	var lastModDate = lastModDate.substring(0,10)
+	displayCopyRight.innerHTML = "<h6>The URL of this document is "+document.URL+"<br />Classic Steam Train Museum"+"<br /> 
+	This document was last modified "+lastModDate+".</h6>"
+}
+
+//-->
+</script>
+<style type="text/css">
+hr {
+	color:#006633;
+	width:600px;
+	height: 5px;
+	}
+	
+.center {
+	text-align:center;
+    }
+
+table {
+	margin-left:15%;
+	margin-right:15%;
+    }
+.cell-width {
+	width: 50%;
+}
+	
+.left-align {
+   width: 50%;
+   left: 0;
+   }
+
+.right-align {
+   width: 50%;
+   right: 0;
+   text-align: right; 
+   } 
+	
+</style>
+</head>
+<body onload="scrollColor(); countDown(); copyRight()">
+<div class="center">
+<p><img src="apply9-1banner.jpg" alt="oakwood banner" width="750" height="120" /></p>
+<p style="font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold;">Classic Steam Train Museum</p>
+<img src="hrimg-green.gif" width="750" height="5" alt="divider" />
+<div id="displayDate">
+</div>
+<img src="hrimg-green.gif" width="750" height="5" alt="divider" /> </div>
+<table>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:12pt">July 4th Steam Run</p>
+    <p>During the July 4th Weekend, we will be rolling out the New York Centrals' old #95. Starting Wednesday, July 4th, through Sunday July 8th, we will have five runs each day starting at 10 a.m. The train runs from the museum to Chester Crossing, 11.3 miles away. Each run lasts about one hour, with one hour in between Reserve tickets now, $5 for children under 10 and $8 for students and seniors, and $12 for adults.</p>
+     </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:12pt">Mission</p>
+    <p>The Classic Steam Train Railroad museum is dedicated to the preservation, restoration, and collection of historical and antique railroad artifacts. Our historians and curators seek to preserve the record of the great steamers and passenger trains. Our annual summer events provide young and old alike with and up-close view of the old great trains of the early twentieth century.</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:12pt">Membership</p>
+    <p>The museum offers varying levels of membership. 
+    Membership fees only cover a small portion of our funding sources. The museum seeks donations and government grants to continue its historical work.</p></td>
+  </tr>
+  <tr>
+    <td class="right-align">
+         <img src="apply9-1train1.jpg" alt="school" width="300" height="198" />
+    </td>
+    <td class="left-align">
+          <img src="apply9-1train2.jpg" alt="school" width="300" height="198" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+
+    </td>
+  </tr>
+</table>
+<div id="displaycopyRight">
+</div>
+</body>
+</html>

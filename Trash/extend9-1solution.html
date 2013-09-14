@@ -1,0 +1,126 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+<title>Extend9-1 Allen County Fair</title>
+<script type="text/javascript">
+<!--Hide from old browsers    		
+var statusmessage="The Allen Count Fair Grounds are open everyday except Thanksgiving and Christmas.";
+	 	function StatusBar() {
+                window.status = statusmessage;
+          	statusmessage = statusmessage.substring(1, statusmessage.length) + statusmessage.substring(0, 1)
+    setTimeout("StatusBar()", 150
+	
+function newScroll() {
+	styleObject.document.getElmentsByTagName('html')[0].style
+	styleObject.scrollbarFaceColor="#000000"
+	styleObject.scrollbarArrowColor="#ffffff"
+	styleObject.scrollbarTrackColor="#999999"
+	StyleObject.scrollbarShadowColor="ffffff"
+}
+
+function countDown() {
+	var today = new Date()
+	var dayofweek = today.toLocateString()
+	dayLocate = dayofweek.indexOf(" ")
+	weekDay = dayofweek.substring(0, dayLocate)
+	newDay = dayofweek.substring(dayLocate)
+	DateLocate = newDay.indexOf(",")
+	monthDate = newDay.substring(0, dateLocate+1)
+	yearLocate = dayofweek.indexOf("2012")
+	year = dayofweek.substr(yearLocate, 4)
+	
+	var CarShow = new Date("August 1, 2012")
+	var daystoGo = CarShow.getTime()-today.getTime()
+	var daysToCarShow = Math.ceil(daysToGo/(1000*60*60*24))
+	
+	displayDate.innerHTML = "<h3>Today is "+weekDay+" "+monthDate+" "+year+". The Allen County fair starts in "+daystoCarShow+".</h3>"
+}
+
+function copyRight() {
+	var lastModDate = document.lastmodified
+	var lastModDate = lastModDate.substring(0,10)
+	displayCopyRight.innerHTML = "<h6>The URL of this document is "+document.URL+"<br />Copyright Allen County 2012"+"<br />This document was last modified
+	"+lastModDate+".</h6>"
+}
+
+//-->
+</script>
+<style type="text/css">
+hr {
+	color:#006633;
+	width:600px;
+	height: 5px;
+	}
+	
+.center {
+	text-align:center;
+    }
+
+table {
+	margin-left:15%;
+	margin-right:15%;
+    }
+.cell-width {
+	width: 50%;
+}
+	
+.left-align {
+   width: 50%;
+   left: 0;
+   }
+
+.right-align {
+   width: 50%;
+   right: 0;
+   text-align: right; 
+   } 
+
+</style>
+</head>
+<body onload="newScroll(); countDown(); copyRight()">
+<div class="center">
+<p><img src="extend9-1banner.jpg" alt="Allen County Fair banner" width="750" height="120" /></p>
+<p style="font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold;">Allen County Fair Classic Car Show</p>
+<img src="hrimg-black.gif" width="750" height="5" alt="divider" />
+<div id="displayStatusBar">
+</div>
+<div id="displayDate">
+</div>
+<img src="hrimg-black.gif" width="750" height="5" alt="divider" /> </div>
+<table width="69%">
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:14px">Allen County Fair Classic Car Show</p>
+    <p>      The Annual Allen County Fair starts Friday, August 10th and runs through Thursday 
+    August 16th. Sunday will feature a classic car show at the Bodmer Pavalion. See classic and antique cars from all over the country. On loan from Hollywood is the 1989 Lotus Espirit SE from the movie Pretty Woman, starring Richard Gere and Julia Robers. Also on loan are the cars from Fast and Furious and Gone in 60 Seconds.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <p style="font-weight:bold; font-family:Arial, sans-serif; font-size:14px">Entertainment</p>
+    <p>Country and Music star Tim McGraw will perform Saturday, August 11th at 7:30 p.m. in the Ray Charles Auditorium. Local blue grass music band, Kettle Moraine String Band, will open for McGraw. Tickets will be $20 to $75 depending on seating location. Call the auditorium box office for details.    </p></td>
+  </tr>
+  <tr>
+    <td class="right-align">
+         <img src="extend9-1classic-car1.jpg" alt="school" width="300" height="200" />
+    </td>
+    <td class="left-align">
+          <img src="extend9-1classic-car2.jpg" alt="school" width="307" height="200" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+
+    </td>
+  </tr>
+</table>
+<p>
+
+</p>
+<div id="displayCopyRight">
+</div>
+</body>
+</html>
